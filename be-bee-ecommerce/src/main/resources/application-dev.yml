@@ -1,0 +1,36 @@
+app:
+    cors-url: http://localhost:3000
+    amazonProperties:
+        bucketName: bee-ecommerce
+    payment:
+        vnpay:
+            ipn-caller: http://localhost:8080/payment/vnpay-ipn
+            expiresInMinutes: 15
+            tmn-code: TNI0OT3G
+            secret-key: LCMWDWKCNVRHYUDSUJHVKGCFUTYFYBNW
+            returnUrl: http://localhost:3000/payment/vnpay-return
+            payUrl: http://sandbox.vnpayment.vn/paymentv2/vpcpay.html
+    auth:
+        resetPasswordLink: http://localhost:3000/reset-password?token=
+        confirmAccountLink: http://localhost:3000/confirm-account?token=
+        secretKey: C2983DA2C9AEEF34BAA2764BB683EFFFB30EB602B60A61CE1E461E760977CB7A
+        token:
+            expiration:
+                resetPassword: 86400000 # 1 day
+                access: 300000000 # 5 minutes
+                refresh: 2592000000 # 30 days
+    oauth2:
+        google:
+            client-id: 754896806428-ciks4e7j8kf5mt0kiloodma7238aqk52.apps.googleusercontent.com
+            client-secret: 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
+            redirect-uri: http://localhost:8080/login/oauth2/code/google
+            return-url: http://localhost:3000/login?refreshToken=%s
+info:
+    application:
+        name: Back end Bee E-commerce
+        version: 1.0.0
+        description: Back end Bee E-commerce in production mode
+spring.datasource:
+    url: jdbc:sqlserver://bee-e-commerce.social;databaseName=Bee-Ecommerce;encrypt=true;trustServerCertificate=true;sslProtocol=TLSv1.2;
+    username: sa
+    password: Fpoly@123

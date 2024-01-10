@@ -1,0 +1,15 @@
+.dichVu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.dichVu-tiem {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.ten-dichVu {
+    font-size: 12px;
+}

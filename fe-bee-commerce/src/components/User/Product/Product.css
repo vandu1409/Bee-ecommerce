@@ -1,0 +1,43 @@
+.product-item-care {
+    background-color: white;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    margin: 0px 5px;
+    margin-top: 15px;
+
+}
+
+.product-item-care:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.product-item-img img {
+    min-height: 100px;
+    width: 100%;
+    background-size: contain;
+}
+
+
+
+.product-item-title {
+    font-size: 13px;
+    font-weight: 400;
+    color: #555;
+    line-height: 16px;
+    margin: 10px 10px 5px;
+    overflow: hidden;
+    display: block;
+    /* Thiết lập hiển thị phần tử dưới dạng các box. */
+    display: -webkit-box;
+    /* Thiết lập hướng của các box theo chiều dọc (vertical). */
+    -webkit-box-orient: vertical;
+    /* Giới hạn số dòng trong phần tử box là 2 dòng. */
+    -webkit-line-clamp: 2;
+
+}

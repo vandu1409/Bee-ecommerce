@@ -1,0 +1,17 @@
+.info-basic-shop-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-basic-shop label {
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, .4);
+    margin-right: 0.75rem;
+}
+
+
+.info-basic-shop span {
+    white-space: nowrap;
+    text-align: right;
+    color: #f53e2d;
+}

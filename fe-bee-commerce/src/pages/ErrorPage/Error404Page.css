@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+.wrapper-error404 {
+      background-image: url("//images01.nicepage.com/c461c07a441a5d220e8feb1a/2cfac4696ff2589386e1de4b/yy.jpg");
+      background-position: 50% 50%;
+}
+
+.title-error {
+      color: #503bc4;
+      font-size: 130px !important;
+      letter-spacing: normal;
+      line-height: 0.7 !important;
+      text-transform: none;
+      font-family: "Agbalumo";
+      font-weight: bold;
+      width: 417px;
+      display: block;
+      padding-bottom: 15px;
+
+}
+
+.content-error {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin: 45px 0 0;
+      color: #503bc4;
+      line-height: 1 !important;
+}
+
+.button-go-homepage {
+      background-image: none;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 1rem;
+      border-style: none;
+      font-weight: 700;
+      margin: 44px auto 0;
+      padding: 14px 52px 15px 51px;
+      background-color: #32cfd8;
+      color: #503bc4;
+}
+
+.button-go-homepage:hover {
+      background-image: none;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 1rem;
+      border-style: none;
+      font-weight: 700;
+      margin: 44px auto 0;
+      padding: 14px 52px 15px 51px;
+      background-color: #503bc4;
+      color: white;
+}

@@ -1,0 +1,7 @@
+.carousel-image {
+    height: 350px;
+    /* Đặt độ cao mong muốn cho hình ảnh */
+
+    /* Đảm bảo hình ảnh không bị méo khi thay đổi kích thước */
+    width: 100%;
+}

@@ -1,0 +1,61 @@
+spring:
+    datasource:
+        url: jdbc:sqlserver://bee-e-commerce.social;databaseName=Bee-Ecommerce;encrypt=true;trustServerCertificate=true;sslProtocol=TLSv1.2;
+        username: sa
+        password: Fpoly@123
+        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+            properties:
+                hibernate.format_sql: true
+                hibernate.dialect: org.hibernate.dialect.SQLServer2012Dialect
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: bee.home.ecommerce@gmail.com
+        password: ylwz tpdr mpmf narn
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: true
+    servlet:
+        multipart:
+            max-file-size: 5MB
+            max-request-size: 5MB
+    cache:
+        type: redis
+        host: bee-e-commerce.social
+        port: 6379
+    data:
+        redis:
+            host: bee-e-commerce.social
+            port: 6379
+            password: Fpoly@123
+        elasticsearch:
+            host: elk.bee-e-commerce.social:9200
+            cluster-name: docker-cluster
+            cluster-nodes: elk.bee-e-commerce.social:9200
+    autoconfigure:
+        exclude : none
+    elasticsearch:
+        uris: http://elk.bee-e-commerce.social:9200
+app:
+    amazonProperties:
+        endpointUrl: https://s3.ap-southeast-2.amazonaws.com
+        accessKey: AKIAQJCAOEOOCGVY5EFS
+        secretKey: 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
+    exception:
+        print-stack-trace: true
+        show-class-name: true
+    mail:
+        subject:
+            resetPassword: XÁC NHẬN THAY ĐỔI MẬT KHẨU
+
+logging:
+    file: bee-ecommerce.log
+    path: /logs/Bee-Ecommerce
+

@@ -1,0 +1,12 @@
+.SidebarMenuVendor{
+    
+    &:hover  &::-webkit-scrollbar {
+        display: block;
+    }
+
+    &::-webkit-scrollbar {
+        width: 5px;
+        display: none;
+    }
+
+}

@@ -1,0 +1,82 @@
+.productTrending-item {
+    background-color: white;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    margin: 0px 5px;
+    margin-top: 15px;
+
+}
+
+.productTrending-item:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+
+}
+
+.productTrending-item-img img {
+    position: relative;
+}
+
+.productTrending-item-img img {
+    min-height: 100px;
+    width: 100%;
+    background-size: contain;
+
+}
+
+.productTrending-item-price {
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    background-color: rgb(189, 189, 189, 0.6);
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.productTrending-item-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #555;
+    line-height: 16px;
+    margin: 10px 10px 5px;
+    overflow: hidden;
+    display: block;
+    /* Thiết lập hiển thị phần tử dưới dạng các box. */
+    display: -webkit-box;
+    /* Thiết lập hướng của các box theo chiều dọc (vertical). */
+    -webkit-box-orient: vertical;
+    /* Giới hạn số dòng trong phần tử box là 2 dòng. */
+    -webkit-line-clamp: 2;
+
+}
+
+
+.product-trending {
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    color: white;
+    background-color: rgb(238, 75, 43);
+    font-weight: bold;
+    padding-right: 4px;
+
+    font-size: 12px;
+    padding: 4px;
+}
+
+.product-trending::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+    /* trên 0, trái phải 20, dưới 6 */
+    border-width: 7px 15px 16px;
+    border-style: solid;
+    border-color: rgb(238, 75, 43) transparent transparent transparent;
+}

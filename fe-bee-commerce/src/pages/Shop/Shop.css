@@ -1,0 +1,106 @@
+.menu-shop-item {
+
+      color: #3f4b53;
+      font-weight: 400;
+      padding: 12px 24px;
+}
+
+.menu-shop-item:hover {
+      background-color: rgb(219, 219, 219, 0.6);
+}
+
+.menu-shop-item-active {
+      border-bottom: 2px solid #ee2624;
+      color: #ee2624;
+      font-weight: 700;
+      padding: 12px 24px;
+}
+
+
+
+
+.search-query {
+      color: #3f4b53;
+      font-size: 14px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      padding: 3px 7px;
+      margin-right: 8px;
+      border-radius: 5px;
+}
+
+.search-query:hover {
+      background-color: rgb(219, 219, 219, 0.6);
+}
+
+.search-query-active {
+      background-color: #fef2f2;
+      border: 1px solid #f47c7b;
+      color: #ee2624;
+      border-radius: 5px;
+      font-size: 14px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      padding: 3px 7px;
+      margin-right: 8px;
+}
+
+.list-category {
+      position: relative;
+}
+
+.list-category-item {
+      position: absolute;
+      top: 110%;
+      right: 10px;
+      width: 250px;
+      border-radius: 3px;
+      box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
+      min-height: 50px;
+      background-color: white;
+      z-index: 30;
+      display: none;
+}
+
+.list-category-item span {
+      display: block;
+      padding: 10px;
+      color: #3f4b53;
+      font-weight: 400;
+
+}
+
+.list-category-item span:hover {
+
+      color: #ee2624;
+      font-weight: 400;
+      font-weight: 400;
+}
+
+.list-category-item::after {
+      content: "";
+      position: absolute;
+      right: 10px;
+      top: -24px;
+      border-style: solid;
+      /* trên-phải-dưới-trái */
+      border-color: transparent transparent white transparent;
+      /* trên dưới-trái phải */
+      border-width: 12px 12px;
+}
+
+.list-category:hover .list-category-item {
+      display: block;
+      z-index: 30;
+}
+
+.active-category {
+      color: #ee4d2d;
+      font-weight: bold;
+      display: block;
+      overflow: hidden;
+      /* text-overflow: ellipsis; */
+      white-space: nowrap;
+      max-width: 100%;
+      font-size: 17px;
+}

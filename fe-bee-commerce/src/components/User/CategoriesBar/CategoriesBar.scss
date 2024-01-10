@@ -1,0 +1,51 @@
+.categories-bar {
+
+    height: calc(100vh - 20px);
+    overflow-y: scroll;
+    position: sticky;
+    top: 0px;
+    background-color: #ffffff;
+    padding: 7px;
+    width: 100%;
+    margin: 0 auto;
+
+    .tieuDe p {
+        margin-bottom: 8px;
+        padding-left: 16px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: rgb(39, 39, 42);
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .category-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        transition: .2s ease-in-out;
+        margin-bottom: 3px;
+        padding: 5px 10px 5px 3px;
+        width: 90%;
+      
+
+        &:hover {
+            background-color: #e7e7e7;
+            border-radius: 15px;
+        }
+
+        p {
+            margin-bottom: 0;
+            line-height: 20px;
+        }
+    }
+
+    .DanhMucItem:hover {
+        background-color: #e7e7e7;
+        border-radius: 20px;
+    }
+}

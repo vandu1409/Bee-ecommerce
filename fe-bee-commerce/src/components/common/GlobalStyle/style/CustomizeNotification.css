@@ -1,0 +1,83 @@
+.notification-container {
+      right: 10px;
+      padding-top: 10px;
+        padding-bottom: 10px;
+}
+
+.notification-container-empty {
+      padding: 0!important;
+}
+
+.notification {
+      min-width: 300px !important;
+        max-width: calc(min(100vw, 500px) - 2rem) !important;
+      border-radius: 12px !important;
+      margin-right: 1rem;
+}
+
+.notification-success::before {
+      content: "\ed31" !important;
+      font-family: 'boxicons' !important;
+      color: #64c9a8;
+}
+
+/* 60c8a7 effaf6 f39a40 fdf4eb 40a2ed ecf7fd d64552 fbeded */
+.notification-success {
+      background: linear-gradient(100deg, #effaf6 80%, #FFFFFF 20%);
+      color: black !important;
+      opacity: 1;
+      border: 4px solid #64c9a8;
+}
+
+
+.notification-message .title {
+      font-weight: bold;
+      color: #58584f;
+}
+
+.notification-message .message {
+      font-weight: 500;
+      color: #808392;
+}
+
+
+.notification-error::before {
+      content: "\eda4" !important;
+      font-family: 'boxicons', serif !important;
+      color: #d74550;
+}
+
+.notification-error {
+      background: linear-gradient(100deg, #fbeded 80%, #FFFFFF 20%);
+      color: black !important;
+      opacity: 1;
+      border: 3px solid #d74550;
+}
+
+
+.notification-warning::before {
+      content: "\eda2" !important;
+      font-family: 'boxicons', serif !important;
+      color: #ea9d44;
+}
+
+.notification-warning {
+      background: linear-gradient(100deg, #fdf4eb 80%, #FFFFFF 20%);
+      color: black !important;
+      opacity: 1;
+      border: 3px solid #ea9d44;
+}
+
+
+.notification-info::before {
+      content: "\ee3f" !important;
+      font-family: 'boxicons', serif !important;
+      color: #3da2ef;
+}
+
+.notification-info {
+      background: linear-gradient(100deg, #ecf7fd 80%, #FFFFFF 20%);
+      color: black !important;
+      opacity: 1;
+      border: 3px solid #3da2ef;
+}

@@ -1,0 +1,18 @@
+.ThuongHieu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+
+}
+
+.ThuongHieu-item {
+    border-radius: 20px;
+    border: 2px solid #ebebee;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.ThuongHieu-item:hover {
+    background-color: #ebebee;
+}

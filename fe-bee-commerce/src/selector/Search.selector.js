@@ -1,0 +1,1 @@
+export const keySearchSelector = (state) => state.keySearch;

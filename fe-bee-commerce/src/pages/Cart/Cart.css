@@ -1,0 +1,65 @@
+.product-cart-item-title {
+      font-size: 16px;
+      color: rgba(0, 0, 0, .87);
+      line-height: 16px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      display: block;
+      /* Thiết lập hiển thị phần tử dưới dạng các box. */
+      display: -webkit-box;
+      /* Thiết lập hướng của các box theo chiều dọc (vertical). */
+      -webkit-box-orient: vertical;
+      /* Giới hạn số dòng trong phần tử box là 2 dòng. */
+      -webkit-line-clamp: 2;
+}
+
+.cart-phan-loai {
+      position: relative;
+}
+
+.cart-phan-loai-list {
+      position: absolute;
+      top: 60%;
+      right: -50px;
+      min-width: 300px;
+      border-radius: 3px;
+      box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
+      min-height: 100px;
+      background-color: white;
+      z-index: 30;
+      display: block;
+      padding: 14px;
+}
+
+.cart-phan-loai-list span {
+      border: 1px solid rgba(0, 0, 0, .09);
+      min-width: 60px;
+      padding: 5px 15px 5px 15px;
+      margin-left: 5px;
+      margin-bottom: 10px;
+      text-align: center;
+
+}
+
+.cart-phan-loai-list .span-active {
+      padding: 5px;
+      border: 1px solid #ee4d2d;
+      min-width: 70px;
+      color: #ee4d2d;
+      padding: 5px 15px 5px 15px;
+      margin-left: 5px;
+      margin-bottom: 10px;
+      text-align: center;
+}
+
+.cart-phan-loai-list::after {
+      content: "";
+      position: absolute;
+      right: 150px;
+      top: -17px;
+      border-style: solid;
+      /* trên-phải-dưới-trái */
+      border-color: transparent transparent white transparent;
+      /* trên dưới-trái phải */
+      border-width: 10px 10px;
+}
